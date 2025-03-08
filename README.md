@@ -16,13 +16,13 @@
 1. Clone this repository to your local machine:
 
    ```bash
-   https://github.com/vikas-kashyap97/Portfolio.git
+   https://github.com/vikas-kashyap97/Vikas-Portfolio.git
    ```
 
 2. Move to the cloned directory:
 
    ```bash
-   cd Portfolio
+   cd Vikas-Portfolio
    ```
 
 3. Install dependencies:
