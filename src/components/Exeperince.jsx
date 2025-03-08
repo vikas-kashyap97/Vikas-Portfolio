@@ -86,7 +86,7 @@ const Experience = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="relative p-6 rounded-xl border border-green-500 transition-all hover:scale-105 hover:shadow-2xl hover:border-green-400">
             <div className="flex items-center gap-4 mb-4">
-              <img src={exp.logo} alt={`${exp.company} logo`} className="w-14 h-14 rounded-full object-cover border border-green-500 p-1" />
+              <img src={exp.logo} alt={`${exp.company} logo`} className="w-16 h-16 rounded-full object-cover border border-green-500 p-1" />
               <div>
                 <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">{exp.role}</h3>
                 <p className="text-green-400 text-sm md:text-base lg:text-lg">{exp.company}</p>
