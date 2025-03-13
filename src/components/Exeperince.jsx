@@ -117,6 +117,7 @@ const Experience = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {certifications.map((cert, index) => (
           <div key={index} className="p-6 rounded-xl border border-green-500 transition-all hover:scale-105 hover:shadow-2xl hover:border-green-400 flex items-center gap-4">
+            
             <img src={cert.logo} alt={`${cert.issuer} logo`} className="w-16 h-16 rounded-full p-2" />
             <div>
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">{cert.title}</h3>
