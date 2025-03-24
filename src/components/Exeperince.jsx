@@ -100,7 +100,7 @@ const Experience = () => {
             </div>
             <ul className="list-none space-y-2 text-green-400 text-sm md:text-base lg:text-lg">
               {exp.description.map((point, i) => (
-                <li key={i} className="relative before:content-['•'] before:text-white before:absolute before:-left-4">
+                <li key={i} className="relative before:content-['•'] before:text-green-500 before:absolute before:-left-4">
                   {point}
                 </li>
               ))}
