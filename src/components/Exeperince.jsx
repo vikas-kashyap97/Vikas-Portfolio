@@ -1,4 +1,4 @@
-import { FaBriefcase, FaMapMarkerAlt, FaCertificate } from "react-icons/fa";
+import { FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 import uminberLogo from "../assets/uminber-logo.jpeg";
 import dropxoutlogo from "../assets/dropxout-logo.jpeg";
 import govtitilogo from "../assets/govtiti-logo.png";
@@ -59,6 +59,7 @@ const certifications = [
     ],
     skills: "Generative AI | Artificial Intelligence (AI) | Generative AI Tools",
     logo: microsoftLogo,
+    link: "https://www.linkedin.com/learning/certificates/9b4785004678a23df1fbfa0d7817f0ad539fc0a9447ebcdd328f7a1457dfa2ec",
   },
   {
     title: "What Is Generative AI?",
@@ -71,6 +72,7 @@ const certifications = [
     ],
     skills: "Generative AI | Computer Ethics | Artificial Intelligence (AI)",
     logo: linkedinLogo,
+    link: "https://www.linkedin.com/learning/certificates/2c54fb51844bde863aa550bb67093e6e7571835e341af5f0adeef4934ad74c81",
   }
 ];
 
@@ -118,7 +120,11 @@ const Experience = () => {
         {certifications.map((cert, index) => (
           <div key={index} className="p-6 rounded-xl border border-green-500 transition-all hover:scale-105 hover:shadow-2xl hover:border-green-400 flex items-center gap-4">
             
-            <img src={cert.logo} alt={`${cert.issuer} logo`} className="w-16 h-16 rounded-full p-2" />
+            {/* Certification Logo with Link */}
+            <a href={cert.link} target="_blank" rel="noopener noreferrer">
+              <img src={cert.logo} alt={`${cert.issuer} logo`} className="w-16 h-16 rounded-full p-2 cursor-pointer" />
+            </a>
+
             <div>
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">{cert.title}</h3>
               <p className="text-green-400 text-sm md:text-base lg:text-lg">{cert.issuer}</p>
