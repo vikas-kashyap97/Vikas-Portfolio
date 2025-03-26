@@ -51,7 +51,7 @@ const MatrixRain = () => {
           drops[i] = 0;
         }
 
-        drops[i]+= 0.7;
+        drops[i]++;
       }
     };
 
