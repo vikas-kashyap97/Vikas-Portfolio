@@ -68,7 +68,7 @@ const RetroLoading = ({ onLoaded, updateInterval = 10, increment = 2 }) => {
     <div className="bg-black text-green-500 font-mono p-4 min-h-screen flex flex-col items-center justify-center">
       {stage === 'start' && (
         <div className="text-center">
-          <h1 className="text-2xl mb-4">Vikas Kashyap Portfolio 2024</h1>
+          <h1 className="text-2xl mb-4">Vikas Kashyap Portfolio 2025</h1>
           <p className="mb-4">Click start to begin</p>
           <button
             onClick={handleStart}
@@ -84,9 +84,9 @@ const RetroLoading = ({ onLoaded, updateInterval = 10, increment = 2 }) => {
           <div className="mb-4">
             <p>Vikas,</p>
             <p>Kashyap Inc.</p>
-            <p>Released: 05/11/2023</p>
-            <p>HHBIOS (C)2024 Vikas Kashyap Inc.</p>
-            <p>HSP S13 2000-2024 Special UC131S</p>
+            <p>Released: 05/11/2024</p>
+            <p>HHBIOS (C)2025 Vikas Kashyap Inc.</p>
+            <p>HSP S13 2000-2025 Special UC131S</p>
             <p>HSP Showcase(tm) XX 113</p>
             <p>Checking RAM : 14000 OK</p>
           </div>
