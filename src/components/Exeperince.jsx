@@ -128,23 +128,31 @@ const Experience = () => {
         {certifications.map((cert, index) => (
           <div
             key={index}
-            className="p-6 rounded-xl border border-green-500 transition-all transform hover:scale-105 hover:shadow-2xl hover:border-green-400 flex flex-col sm:flex-row items-center sm:items-start gap-4"
+            className="p-6 rounded-xl border border-green-500 transition-all transform hover:scale-105 hover:shadow-2xl hover:border-green-400 flex flex-col sm:flex-row items-center sm:items-start gap-6"
           >
             {/* Certification Logo with Link */}
-            <a href={cert.link} target="_blank" rel="noopener noreferrer">
+            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
               <img
                 src={cert.logo}
                 alt={`${cert.issuer} logo`}
-                className="w-14 h-14 md:w-16 md:h-16 rounded-full p-2 cursor-pointer"
+                className="w-full h-full rounded-full object-cover p-2"
               />
             </a>
 
-            <div>
+            <div className="flex-1">
               <h3 className="text-lg md:text-xl font-semibold">{cert.title}</h3>
               <p className="text-green-400 text-sm md:text-base">{cert.issuer}</p>
               <p className="text-green-400 text-xs md:text-sm">{cert.issueDate}</p>
               <p className="text-green-400 text-sm md:text-base font-medium mt-2">{cert.skills}</p>
-              <p className="text-green-400 text-sm md:text-base mt-2">{cert.description[0]}</p>
+              
+              {/* Display Full Description */}
+              <ul className="mt-2 space-y-1 text-green-400 text-sm md:text-base">
+                {cert.description.map((point, i) => (
+                  <li key={i} className="relative before:content-['•'] before:text-green-500 before:absolute before:-left-4 pl-2">
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
