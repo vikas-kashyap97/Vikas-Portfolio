@@ -78,29 +78,37 @@ const certifications = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 px-6 md:px-16 text-green-500">
+    <section id="experience" className="py-12 px-4 md:px-8 lg:px-16 text-green-500">
+      
       {/* Experience Section */}
-      <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-10">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10">
         Experience
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative p-6 rounded-xl border border-green-500 transition-all hover:scale-105 hover:shadow-2xl hover:border-green-400">
+          <div
+            key={index}
+            className="relative p-6 rounded-xl border border-green-500 transition-all transform hover:scale-105 hover:shadow-2xl hover:border-green-400"
+          >
             <div className="flex items-center gap-4 mb-4">
-              <img src={exp.logo} alt={`${exp.company} logo`} className="w-16 h-16 rounded-full object-cover p-1" />
+              <img
+                src={exp.logo}
+                alt={`${exp.company} logo`}
+                className="w-14 h-14 md:w-16 md:h-16 rounded-full object-cover p-1"
+              />
               <div>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">{exp.role}</h3>
-                <p className="text-green-400 text-sm md:text-base lg:text-lg">{exp.company}</p>
-                <div className="flex items-center text-xs md:text-sm lg:text-base text-green-400 mt-1">
+                <h3 className="text-lg md:text-xl font-semibold">{exp.role}</h3>
+                <p className="text-green-400 text-sm md:text-base">{exp.company}</p>
+                <div className="flex items-center text-xs md:text-sm text-green-400 mt-1">
                   <FaBriefcase className="mr-2" /> {exp.duration}
                 </div>
-                <div className="flex items-center text-xs md:text-sm lg:text-base text-green-400 mt-1">
+                <div className="flex items-center text-xs md:text-sm text-green-400 mt-1">
                   <FaMapMarkerAlt className="mr-2" /> {exp.location}
                 </div>
               </div>
             </div>
-            <ul className="list-none space-y-2 text-green-400 text-sm md:text-base lg:text-lg">
+            <ul className="list-none space-y-2 text-green-400 text-sm md:text-base">
               {exp.description.map((point, i) => (
                 <li key={i} className="relative before:content-['•'] before:text-green-500 before:absolute before:-left-4">
                   {point}
@@ -112,27 +120,31 @@ const Experience = () => {
       </div>
 
       {/* Certifications Section */}
-      <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mt-16 mb-10">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-16 mb-10">
         Certifications
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {certifications.map((cert, index) => (
-          <div key={index} className="p-6 rounded-xl border border-green-500 transition-all hover:scale-105 hover:shadow-2xl hover:border-green-400 flex items-center gap-4">
-            
+          <div
+            key={index}
+            className="p-6 rounded-xl border border-green-500 transition-all transform hover:scale-105 hover:shadow-2xl hover:border-green-400 flex flex-col sm:flex-row items-center sm:items-start gap-4"
+          >
             {/* Certification Logo with Link */}
             <a href={cert.link} target="_blank" rel="noopener noreferrer">
-              <img src={cert.logo} alt={`${cert.issuer} logo`} className="w-16 h-16 rounded-full p-2 cursor-pointer" />
+              <img
+                src={cert.logo}
+                alt={`${cert.issuer} logo`}
+                className="w-14 h-14 md:w-16 md:h-16 rounded-full p-2 cursor-pointer"
+              />
             </a>
 
             <div>
-              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">{cert.title}</h3>
-              <p className="text-green-400 text-sm md:text-base lg:text-lg">{cert.issuer}</p>
-              <p className="text-green-400 text-xs md:text-sm lg:text-base">{cert.issueDate}</p>
-              <p className="text-green-400 text-sm md:text-base lg:text-xl font-medium mt-2">{cert.skills}</p>
-              <p className="text-green-400 text-sm md:text-base lg:text-lg mt-2">{cert.description[0]}</p>
-              <p className="text-green-400 text-sm md:text-base lg:text-lg">{cert.description[1]}</p>
-              <p className="text-green-400 text-sm md:text-base lg:text-lg">{cert.description[2]}</p>
+              <h3 className="text-lg md:text-xl font-semibold">{cert.title}</h3>
+              <p className="text-green-400 text-sm md:text-base">{cert.issuer}</p>
+              <p className="text-green-400 text-xs md:text-sm">{cert.issueDate}</p>
+              <p className="text-green-400 text-sm md:text-base font-medium mt-2">{cert.skills}</p>
+              <p className="text-green-400 text-sm md:text-base mt-2">{cert.description[0]}</p>
             </div>
           </div>
         ))}
