@@ -56,25 +56,26 @@ const About = () => {
             {/* YOUR TEXT IS KEPT EXACTLY AS IT WAS */}
             <p className="mt-2 lg:mt-5 text-green-500 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
               As a passionate{" "}
-              <span className="lg:text-2xl font-semibold">
-                Frontend & AI Developer
-              </span>{" "}
+              <a className="lg:text-3xl font-semibold">Frontend & AI Developer</a>{" "}
               with over one year of experience, I specialize in crafting{" "}
-              <span className="lg:text-2xl font-semibold">
-                intelligent, user-focused solutions.
-              </span>{" "}
+              <a className="lg:text-3xl font-semibold">intelligent, user-focused solutions.</a>{" "}
               From designing seamless{" "}
-              <span className="lg:text-2xl font-semibold">
-                frontend interfaces
-              </span>{" "}
+              <a className="lg:text-3xl font-semibold">frontend interfaces</a>{" "}
               to integrating{" "}
-              <span className="lg:text-2xl font-semibold">
-                AI-driven automation,
-              </span>{" "}
+              <a className="lg:text-3xl font-semibold">AI-driven automation,</a>{" "}
               I thrive on transforming ideas into{" "}
-              <span className="lg:text-2xl font-semibold">
-                scalable digital experiences.
-              </span>
+              <a className="lg:text-3xl font-semibold">scalable digital experiences.</a>{" "}
+              With expertise in{" "}
+              <a className="lg:text-3xl font-semibold">React.js, Vite, and AI technologies,</a>{" "}
+              I am dedicated to delivering{" "}
+              <a className="lg:text-3xl font-semibold">high-performance, responsive,</a>{" "}
+              and <a className="lg:text-3xl font-semibold">visually stunning applications.</a>{" "}
+              My commitment to continuous learning and{" "}
+              <a className="lg:text-3xl font-semibold">innovation</a>{" "}
+              drives me to push the boundaries of technology. Let’s{" "}
+              <a className="lg:text-3xl font-semibold">collaborate</a>{" "}
+              and build the future of{" "}
+              <a className="lg:text-3xl font-semibold">AI-powered digital experiences.</a>
             </p>
 
             {/* Information Table */}
