@@ -30,10 +30,10 @@ const Skills = () => {
           Continuously honing my skills to deliver exceptional solutions.
         </h2>
 
-        {/* Skills List */}
-        <div className="w-full md:w-4/5 mx-auto md:mt-5 lg:mt-10 p-2 md:p-5">
+        {/* Skills Grid (Responsive) */}
+        <div className="w-full md:w-4/5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mt-10 p-2 md:p-5">
           {skillsArr.map((skill) => (
-            <div key={skill.id} className="flex items-center gap-3 mb-4 hover:scale-105 transition-transform duration-300">
+            <div key={skill.id} className="flex flex-col items-center gap-2 hover:scale-105 transition-transform duration-300">
               {/* Skill Icon */}
               {skill.skillName === "HTML" && <FaHtml5 className="icon text-green-500" />}
               {skill.skillName === "CSS" && <FaCss3Alt className="icon text-green-500" />}
@@ -54,11 +54,11 @@ const Skills = () => {
               {/* Skill Name */}
               <span className="text-green-500 font-semibold text-lg">{skill.skillName}</span>
 
-              {/* Progress Bar */}
-              <div className="w-full max-w-[200px]">
+              {/* Progress Bar (Hidden on small screens) */}
+              <div className="w-full max-w-[150px] hidden sm:block">
                 <Progress value={skill.value} color="green" className="rounded-full h-2 bg-opacity-40" />
               </div>
-              <span className="text-green-500 font-semibold">{skill.value}%</span>
+              <span className="text-green-500 font-semibold hidden sm:block">{skill.value}%</span>
             </div>
           ))}
         </div>
@@ -67,7 +67,7 @@ const Skills = () => {
       {/* Styles */}
       <style jsx>{`
         .icon {
-          font-size: 2rem;
+          font-size: 3rem;
           transition: transform 0.3s ease-in-out;
         }
         .icon:hover {
