@@ -53,6 +53,7 @@ const About = () => {
               My Bio
             </h1>
 
+            {/* YOUR TEXT IS KEPT EXACTLY AS IT WAS */}
             <p className="mt-2 lg:mt-5 text-green-500 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
               As a passionate{" "}
               <span className="lg:text-2xl font-semibold">
