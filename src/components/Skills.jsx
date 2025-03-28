@@ -52,7 +52,7 @@ const Skills = () => {
               {skill.skillName === "GitHub Copilot" && <SiGithubcopilot className="icon text-green-500" />}
 
               {/* Skill Name */}
-              <span className="text-green-500 font-semibold text-lg">{skill.skillName}</span>
+              <span className="text-green-500 font-semibold text-lg text-center">{skill.skillName}</span>
 
               {/* Progress Bar (Hidden on small screens) */}
               <div className="w-full max-w-[150px] hidden sm:block">
