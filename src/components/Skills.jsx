@@ -44,102 +44,21 @@ const Skills = () => {
               {/* Flex container for icon and name */}
               <div className="inline-flex items-center gap-1">
                 {/* Skill Name with Tech Icons */}
-                {skill.skillName === "HTML" && (
-                  <>
-                    <FaHtml5 className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "CSS" && (
-                  <>
-                    <FaCss3Alt className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "JavaScript" && (
-                  <>
-                    <IoLogoJavascript className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Tailwind CSS" && (
-                  <>
-                    <SiTailwindcss className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "React JS" && (
-                  <>
-                    <FaReact className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "MongoDB" && (
-                  <>
-                    <DiMongodb className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Express.js" && (
-                  <>
-                    <SiExpress className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Node.js" && (
-                  <>
-                    <FaNode className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Next.js" && (
-                  <>
-                    <SiNextdotjs className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Developer Tools" && (
-                  <>
-                    <MdOutlineDeveloperMode className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "Artificial Intelligence" && (
-                  <>
-                    <GiArtificialIntelligence className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
-                {skill.skillName === "GitHub Copilot" && (
-                  <>
-                    <SiGithubcopilot className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
-                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
-                      {skill.skillName}
-                    </span>
-                  </>
-                )}
+                {skill.skillName === "HTML" && <><FaHtml5 className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "CSS" && <><FaCss3Alt className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "JavaScript" && <><IoLogoJavascript className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Tailwind CSS" && <><SiTailwindcss className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "React JS" && <><FaReact className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "MongoDB" && <><DiMongodb className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Express.js" && <><SiExpress className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Node.js" && <><FaNode className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Next.js" && <><SiNextdotjs className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Git" && <><FaGit className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "GitHub" && <><FaGithub className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "APIs" && <><AiFillApi className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Developer Tools" && <><MdOutlineDeveloperMode className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "Artificial Intelligence" && <><GiArtificialIntelligence className="icon" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "GitHub Copilot" && <><SiGithubcopilot className="icon" /><span>{skill.skillName}</span></>}
               </div>
 
               {/* Percentage and Progress Bar hidden on small screens */}
@@ -159,6 +78,44 @@ const Skills = () => {
           ))}
         </div>
       </section>
+
+      {/* Style for the component */}
+      <style jsx>{`
+        .skill-card {
+          transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transform: scale(1.05);
+        }
+
+        /* Floating Animation for Tech Icons */
+        @keyframes floatEffect {
+          0% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0); }
+        }
+
+        .icon {
+          text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500;
+        }
+
+        .animate-float {
+          animation: floatEffect 2s infinite ease-in-out;
+        }
+
+        /* Pulse animation on hover for the tech icons */
+        .skill-card:hover .icon {
+          animation: pulseEffect 1s infinite;
+        }
+
+        @keyframes pulseEffect {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.1); opacity: 0.8; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+      `}</style>
     </>
   );
 };
