@@ -15,11 +15,7 @@ const About = () => {
 
   return (
     <>
-      <section
-        ref={about}
-        id="about"
-        className="w-full py-10 md:py-20 mb-20"
-      >
+      <section ref={about} id="about" className="w-full py-10 md:py-20 mb-20">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-500 pl-4 md:pl-8">
           ABOUT ME
         </h1>
@@ -53,7 +49,6 @@ const About = () => {
               My Bio
             </h1>
 
-            {/* YOUR TEXT IS KEPT EXACTLY AS IT WAS */}
             <p className="mt-2 lg:mt-5 text-green-500 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
               As a passionate{" "}
               <a className="lg:text-3xl font-semibold">Frontend & AI Developer</a>{" "}
@@ -78,26 +73,20 @@ const About = () => {
               <a className="lg:text-3xl font-semibold">AI-powered digital experiences.</a>
             </p>
 
-            {/* Information Table */}
+            {/* Information Table (Now in one row) */}
             <table className="w-full mt-5 lg:mt-10 text-sm md:text-base">
               <tbody>
-                <tr>
+                <tr className="flex flex-col md:flex-row md:justify-between">
                   <td className="p-1 lg:p-3">
                     <span className="text-green-400 lg:text-xl">Name</span> <br />
                     <span className="text-green-500">Vikas Kashyap</span>
                   </td>
-                </tr>
-                <tr>
                   <td className="p-1 lg:p-3">
-                    <span className="text-green-400 lg:text-xl">Email</span>
-                    <br />
+                    <span className="text-green-400 lg:text-xl">Email</span> <br />
                     <span className="text-green-500">vikaskashyaprock@gmail.com</span>
                   </td>
-                </tr>
-                <tr>
                   <td className="p-1 lg:p-3">
-                    <span className="text-green-400 lg:text-xl">Phone</span>
-                    <br />
+                    <span className="text-green-400 lg:text-xl">Phone</span> <br />
                     <span className="text-green-500">+91 8542050782</span>
                   </td>
                 </tr>
