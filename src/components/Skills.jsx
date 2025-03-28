@@ -2,11 +2,15 @@ import { skillsArr } from "./skillsData";
 import { useEffect, useRef } from "react";
 import { animateBox } from "./animation";
 import { Progress } from "@material-tailwind/react";
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaGit } from "react-icons/fa6";
+import { 
+  FaReact, FaHtml5, FaCss3Alt, FaGithub, FaGit, FaNode 
+} from "react-icons/fa6";
 import { AiFillApi } from "react-icons/ai";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiNextdotjs, SiGithubcopilot } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
+import { MdOutlineDeveloperMode } from "react-icons/md";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 const Skills = () => {
   const skill = useRef();
@@ -96,25 +100,41 @@ const Skills = () => {
                     </span>
                   </>
                 )}
-                {skill.skillName === "Git" && (
+                {skill.skillName === "Node.js" && (
                   <>
-                    <FaGit className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
+                    <FaNode className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
                     <span className="text-green-500 text-sm sm:text-lg font-semibold">
                       {skill.skillName}
                     </span>
                   </>
                 )}
-                {skill.skillName === "GitHub" && (
+                {skill.skillName === "Next.js" && (
                   <>
-                    <FaGithub className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
+                    <SiNextdotjs className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
                     <span className="text-green-500 text-sm sm:text-lg font-semibold">
                       {skill.skillName}
                     </span>
                   </>
                 )}
-                {skill.skillName === "APIs" && (
+                {skill.skillName === "Developer Tools" && (
                   <>
-                    <AiFillApi className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
+                    <MdOutlineDeveloperMode className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
+                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
+                      {skill.skillName}
+                    </span>
+                  </>
+                )}
+                {skill.skillName === "Artificial Intelligence" && (
+                  <>
+                    <GiArtificialIntelligence className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
+                    <span className="text-green-500 text-sm sm:text-lg font-semibold">
+                      {skill.skillName}
+                    </span>
+                  </>
+                )}
+                {skill.skillName === "GitHub Copilot" && (
+                  <>
+                    <SiGithubcopilot className="text-green-400 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500" />
                     <span className="text-green-500 text-sm sm:text-lg font-semibold">
                       {skill.skillName}
                     </span>
@@ -139,64 +159,6 @@ const Skills = () => {
           ))}
         </div>
       </section>
-
-      {/* Style for the component */}
-      <style jsx>{`
-        .skill-card {
-          transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          transform: scale(1.05);
-        }
-
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-
-        /* Floating Animation for Tech Icons */
-        @keyframes floatEffect {
-          0% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        }
-
-        .animate-float {
-          animation: floatEffect 2s infinite ease-in-out;
-        }
-
-        /* Pulse animation on hover for the tech icons */
-        .skill-card:hover .tech-icons {
-          animation: pulseEffect 1s infinite;
-        }
-
-        @keyframes pulseEffect {
-          0% {
-            transform: scale(1);
-            opacity: 1;
-          }
-          50% {
-            transform: scale(1.1);
-            opacity: 0.8;
-          }
-          100% {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </>
   );
 };
