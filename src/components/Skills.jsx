@@ -44,21 +44,21 @@ const Skills = () => {
               {/* Flex container for icon and name */}
               <div className="inline-flex items-center gap-1">
                 {/* Skill Name with Tech Icons (All in Green) */}
-                {skill.skillName === "HTML" && <><FaHtml5 className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "CSS" && <><FaCss3Alt className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "JavaScript" && <><IoLogoJavascript className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Tailwind CSS" && <><SiTailwindcss className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "React JS" && <><FaReact className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "MongoDB" && <><DiMongodb className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Express.js" && <><SiExpress className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Node.js" && <><FaNode className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Next.js" && <><SiNextdotjs className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Git" && <><FaGit className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "GitHub" && <><FaGithub className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "APIs" && <><AiFillApi className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Developer Tools" && <><MdOutlineDeveloperMode className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "Artificial Intelligence" && <><GiArtificialIntelligence className="icon text-green-500" /><span>{skill.skillName}</span></>}
-                {skill.skillName === "GitHub Copilot" && <><SiGithubcopilot className="icon text-green-500" /><span>{skill.skillName}</span></>}
+                {skill.skillName === "HTML" && <><FaHtml5 className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "CSS" && <><FaCss3Alt className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "JavaScript" && <><IoLogoJavascript className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Tailwind CSS" && <><SiTailwindcss className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "React JS" && <><FaReact className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "MongoDB" && <><DiMongodb className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Express.js" && <><SiExpress className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Node.js" && <><FaNode className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Next.js" && <><SiNextdotjs className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Git" && <><FaGit className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "GitHub" && <><FaGithub className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "APIs" && <><AiFillApi className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Developer Tools" && <><MdOutlineDeveloperMode className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "Artificial Intelligence" && <><GiArtificialIntelligence className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
+                {skill.skillName === "GitHub Copilot" && <><SiGithubcopilot className="icon text-green-500" /><span className="text-green-500">{skill.skillName}</span></>}
               </div>
 
               {/* Percentage and Progress Bar */}
@@ -93,6 +93,11 @@ const Skills = () => {
         /* Icon Styling */
         .icon {
           text-green-500 text-lg sm:text-2xl hover:scale-110 transform transition-transform duration-500;
+        }
+
+        /* Skill Name Styling */
+        .text-green-500 {
+          font-semibold text-sm sm:text-lg;
         }
       `}</style>
     </>
