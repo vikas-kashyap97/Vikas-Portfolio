@@ -28,6 +28,9 @@ const Navbar = () => {
           <a href="#experience" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             Experience
           </a>
+          <a href="#blogs" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
+            Blogs
+          </a>
           <a href="#contact" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             Contact
           </a>
@@ -68,6 +71,12 @@ const Navbar = () => {
               className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800"
             >
               Experience
+            </a>
+            <a
+              href="#blogs"
+              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800"
+            >
+              Blogs
             </a>
             <a
               href="#contact"

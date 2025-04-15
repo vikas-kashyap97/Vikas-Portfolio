@@ -8,6 +8,7 @@ const Projects = lazy(() => import("./Projects"));
 const Contact = lazy(() => import("./Contact"));
 const Footer = lazy(() => import("./Footer"));
 const Exeperince = lazy(() => import("./Exeperince"));
+const Blogs = lazy(() => import("./Blogs"));
 
 const RootLayout = () => {
   return (
@@ -17,6 +18,7 @@ const RootLayout = () => {
     <About />
     <Skills />
     <Exeperince />
+    <Blogs />
     <Projects />
     <Contact />
     <Footer />
