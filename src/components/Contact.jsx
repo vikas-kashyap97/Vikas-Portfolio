@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <>
       <section ref={contact} id="contact" className="w-full mt-10 md:mt-20">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold pl-2">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 pl-2">
           CONTACT
         </h1>
 
