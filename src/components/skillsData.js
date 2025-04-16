@@ -14,4 +14,5 @@ export const skillsArr = [
   { id: 13, skillName: "Developer Tools", value: 90 },
   { id: 14, skillName: "Artificial Intelligence", value: 75 },
   { id: 15, skillName: "GitHub Copilot", value: 80 },
+  { id: 16, skillName: "LangChain", value: 70 },
 ];
