@@ -4,6 +4,8 @@ import { SiTailwindcss, SiExpress, SiGithubcopilot, SiNextdotjs  } from "react-i
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { DiMongodb } from "react-icons/di";
+import { LangChain } from '@lobehub/icons';
+import { AiFillApi } from "react-icons/ai";
 import { useEffect, useRef } from "react";
 import Typed from 'typed.js';
 import { animateBox } from "./animation";
@@ -76,11 +78,13 @@ const Hero = () => {
             <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <FaNode className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <SiNextdotjs className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+            <AiFillApi className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <MdOutlineDeveloperMode  className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <FaGit className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <FaGithub className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <GiArtificialIntelligence className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <SiGithubcopilot className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+            <LangChain className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
           </div>
         </div>
       </div>
