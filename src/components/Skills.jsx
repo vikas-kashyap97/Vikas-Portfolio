@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa6";
 import { AiFillApi } from "react-icons/ai";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiExpress, SiNextdotjs, SiGithubcopilot, SiLangchain } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiNextdotjs, SiGithubcopilot } from "react-icons/si";
+import { LangChain } from '@lobehub/icons';
 import { DiMongodb } from "react-icons/di";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -50,7 +51,8 @@ const Skills = () => {
               {skill.skillName === "Developer Tools" && <MdOutlineDeveloperMode className="icon text-green-500" />}
               {skill.skillName === "Artificial Intelligence" && <GiArtificialIntelligence className="icon text-green-500" />}
               {skill.skillName === "GitHub Copilot" && <SiGithubcopilot className="icon text-green-500" />}
-              {skill.skillName === "LangChain" && <SiLangchain className="icon text-green-500" />}
+              {skill.skillName === "LangChain" && <LangChain  className="icon text-green-500" />}
+
 
               {/* Skill Name */}
               <span className="text-green-500 font-semibold text-lg text-center">{skill.skillName}</span>
