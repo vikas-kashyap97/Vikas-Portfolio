@@ -43,7 +43,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen custom-Cursor overflow-y-scroll scrollbar-hide"
+      <div className="flex flex-col min-h-screen custom-Cursor overflow-y-scroll overflow-x-scroll scrollbar-hide"
       style={{
         cursor: `url(${customCursor}), crosshair`,
       }}
