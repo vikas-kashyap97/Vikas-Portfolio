@@ -48,7 +48,7 @@ const Hero = () => {
       className="relative h-screen w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-5 lg:p-10"
     >
       {/* Left Section */}
-      <div className="mt-10 md:mt-0 text-center lg:text-left">
+      <div className="mt-10 md:mt-16 text-center lg:text-left">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 drop-shadow-lg">
           Hello,
           <br /> I am <span className="text-green-500">Vikas</span>
