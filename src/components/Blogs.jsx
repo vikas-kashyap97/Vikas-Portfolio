@@ -1,6 +1,7 @@
 import { FaMedium } from "react-icons/fa6";
 import projectCycleImg from "../assets/Project cycle.jpeg";
 import neuralNetworkImg from "../assets/Neural Network.jpeg";
+import EntrepreneurshipImg from "../assets/EntrepreneurshipImg.png";
 
 // Blog data
 const blogs = [
@@ -29,6 +30,19 @@ An AI project cycle provides a framework for planning, organizing, executing, an
     content: `Neural Networks are a series of algorithms used to recognize hidden patterns in raw data...
 
 They are widely used in stock markets, marketing trends, and fraud detection...`,
+  },
+  {
+    id: 3,
+    title: "Entrepreneurship Demystified",
+    excerpt: "An entrepreneur is a person who makes his own business in an innovative manner and bears...",
+    author: "Vikas Kashyap",
+    date: "Apr 21, 2025",
+    readTime: "12 min read",
+    mediumLink: "https://medium.com/@vikas_kashyap/entrepreneurship-demystified-a-complete-guide-to-mindset-myths-roles-realities-64dd4b2fb95c",
+    image: EntrepreneurshipImg,
+    content: `An entrepreneur is a person who makes his own business in an innovative manner and bears...
+
+Once you make more money, you can reinvest it into your business to make it bigger...`,
   },
 ];
 
@@ -64,15 +78,18 @@ const BlogCard = ({ post }) => {
   );
 };
 
+
 // Blogs Component
 const Blogs = () => {
   return (
     <section id="blogs" className="py-12 px-4 sm:px-6 md:px-8 lg:px-16 text-green-500">
       <div className="max-w-screen-xl mx-auto">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-10">Blogs</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {blogs.map((post) => (
-            <BlogCard key={post.id} post={post} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogs.map((post, index) => (
+            <div key={post.id} className={index % 3 === 0 && index !== 0 ? 'col-span-3' : ''}>
+              <BlogCard post={post} />
+            </div>
           ))}
         </div>
       </div>
