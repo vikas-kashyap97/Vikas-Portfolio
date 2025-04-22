@@ -3,6 +3,7 @@ import projectCycleImg from "../assets/Project cycle.jpeg";
 import neuralNetworkImg from "../assets/Neural Network.jpeg";
 import EntrepreneurshipImg from "../assets/EntrepreneurshipImg.png";
 
+
 // Blog data
 const blogs = [
   {
