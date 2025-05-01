@@ -97,8 +97,8 @@ const About = () => {
             <Button className="px-6 lg:px-8 py-3 lg:py-4 mt-5 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105 transition-transform">
               <a
                 className="text-black"
-                href="/images/Vikas Kashyap Frontend 1Yrs.pdf"
-                download="/images/Vikas Kashyap Frontend 1Yrs.pdf"
+                href="Vikas Kashyap AI_ML 1Yrs.pdf"
+                download="Vikas Kashyap AI_ML 1Yrs.pdf"
               >
                 DOWNLOAD RESUME
               </a>
